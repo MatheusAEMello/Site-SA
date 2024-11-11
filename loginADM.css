@@ -5,10 +5,12 @@
 }
 
 body{
-    background-image: url("Imagens/FundoSA.png");
+    background-image: url("Imagens/backgroud.png");
+    background-position: center;
+    background-size: contain
 }
 .fundoQuadrado{
-    background-color: #EEC7BB;
+    background-color: #f8e5e5;
     width: 20%;
     height: 45%;
     border-radius: 15px;
@@ -20,7 +22,7 @@ body{
     color: #8C0444; 
 }
 .caixaCadastro{
-    background-color: #EEC7BB;
+    background-color: #f8e5e5;
     width: 45%;
     height: 45%;
     border-radius: 15px;
@@ -111,4 +113,9 @@ button{
 .container{
     background-color: red;
     width: 100%;
+}
+
+img{
+    width: 15%;
+    padding-bottom: 5%;
 }

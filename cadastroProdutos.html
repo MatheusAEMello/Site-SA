@@ -16,7 +16,16 @@
         <h1>Cadastro de Produto</h1>
         <input type="text" id="nome" placeholder="Nome do Produto" required>
         <input type="text" id="descricao" placeholder="Descrição do Produto" required>
-        <input type="number" id="preco" placeholder="Preço do Produto" required>
+
+       <p> Selecione o tamanho do Produto </p>
+        <input type="radio" id="preco" placeholder="P" required>
+        <label> P </label>
+        <input type="radio" id="preco" placeholder="P" required>
+        <label> M </label>
+        <input type="radio" id="preco" placeholder="P" required>
+        <label> Tamanho Único </label>
+
+        <input type="text" id="urlImage" placeholder="URL da imagem do Produto" required>
         <button type="button" onclick="cadastrarProduto()">Cadastrar Produto</button>
         <button type="button" onclick="voltar()">Voltar</button>
     </div>
