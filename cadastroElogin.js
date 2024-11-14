@@ -7,29 +7,31 @@ function Cadastro() {
     let BancodeDados=  JSON.parse(localStorage.getItem("cadatro")) || {}
    
     if(BancodeDados [email]){
-       alert('Esse email já foi cadastrado');
+       alert('Esse email já foi cadastrado!');
        return;
     }
 
-    if(email && senha && termos.checked && email.includes('@')){
+    else if(email && senha && termos.checked){
         BancodeDados[email] = { email: email, senha: senha };
-        localStorage.setItem('cadatro', JSON.stringify(BancodeDados))
-        alert('Usuário cadastrado com sucesso')
+        localStorage.setItem('cadastro', JSON.stringify(BancodeDados))
+        alert('Usuário cadastrado com sucesso!')
         window.location.href="login.html"
     }
     else{
-        alert('preencha todas as infromações')
+        alert('Preencha todas as informações!')
     }
 }
 
 function login(){
-    let emailLogin = document.getElementById(email).value
-    let senhaLogin = document.getElementById(senha).value
+    let emailLogin = document.getElementById(email).value;
+    let senhaLogin = document.getElementById(senha).value;
 
-    if(BancodeDados[emailLogin].email=== emailLogin && BancodeDados[senhaLogin].senha=== senhaLogin)
-    alert('login bem sucedido')
+    if(BancodeDados[emailLogin].email=== emailLogin && BancodeDados[senhaLogin].senha=== senhaLogin){
+    alert('Login bem sucedido')
     window.location.href ="telaPrincipal.html"
-
+    }else{
+    alert('Usuário não encontrado')
+    }
 }
 
 // MODAL CADASTRO
@@ -58,4 +60,3 @@ fundo.addEventListener("click", function(e) {
         fundo.classList.add("sumir"); 
     }
 });
-

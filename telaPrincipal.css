@@ -173,3 +173,16 @@ img#tituloCardapio{
     justify-content: center;
     padding-bottom: 2%;
 }
+
+.maisInfo{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.emailPromo{
+    width: 40%;
+    border-radius: 15%;
+    display: flex;
+    align-items: center;
+}

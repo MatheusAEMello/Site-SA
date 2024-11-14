@@ -4,11 +4,13 @@
             const nome = document.getElementById('nome').value;
             const preco = document.getElementById('preco').value;
             const descricao = document.getElementById('descricao').value;
+            const urlImage = document.getElementById('urlImage').value;
 
             const produto = {
                 nome,
                 preco,
-                descricao
+                descricao,
+                urlImage
             };
 
             if (produto.nome && produto.preco && produto.descricao) {
@@ -28,6 +30,7 @@
             document.getElementById('nome').value = '';
             document.getElementById('preco').value = '';
             document.getElementById('descricao').value = '';
+            document.getElementById('urlImage').value = '';
         }
 
         function exibirProdutos() {
@@ -38,13 +41,21 @@
             for (let i in produtos) {
                 const produto = produtos[i];
                 const li = document.createElement('li');
+                
+                const img = document.createElement('img');
+                img.src = produto.urlImage;
+                img.style.margin = '10px';
+                img.style.width = '100px';
+                img.style.height = 'auto';
+
                 li.textContent = `${produto.nome} - R$${produto.preco} - ${produto.descricao}`;
-               
+
                 const deleteBtn = document.createElement('button');
                 deleteBtn.textContent = 'Deletar';
                 deleteBtn.classList.add('delete-btn');
                 deleteBtn.onclick = () => deletarProduto(i);
 
+                li.appendChild(img);
                 li.appendChild(deleteBtn);
                 listaProdutos.appendChild(li);
             }

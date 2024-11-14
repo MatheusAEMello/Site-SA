@@ -84,12 +84,6 @@ button#semCadastro{
     align-items: baseline;
 }
 
-label{
-    width: 50px;
-    height: 10px;
-    font-size: larger;
-}
-
 .inputTexto{
     margin-left: 40px;
     outline: none;
