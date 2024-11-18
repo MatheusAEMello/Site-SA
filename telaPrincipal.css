@@ -102,6 +102,18 @@ body{
     justify-content: space-around;
     margin-top: -5%;
 }
+ul#listaProdutos{
+    margin: 6%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    justify-content: space-around;
+    margin-top: 2%;
+}
+
+li.produto-item{
+    text-align: center;
+}
 
 .caixaProdutos{
     flex-direction: column;
@@ -117,6 +129,11 @@ body{
 }
 
 .caixaProdutos:hover{
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
+li.produto-item:hover{
     transform: scale(1.1);
     transition: 0.5s;
 }
@@ -160,12 +177,11 @@ body{
 }
 
 img{
-    border-radius: 15%;
+    border-radius: 10%;
 }
 
 img#tituloCardapio{
     width: 20%;
-    padding-top: 10%;
 }
 
 .caixaTituloCardapio{
@@ -174,15 +190,49 @@ img#tituloCardapio{
     padding-bottom: 2%;
 }
 
-.maisInfo{
-    display: flex;
+#produtos{
+    padding-top: 5%;
+    width: 35%;
+    height: 45%;
+    margin: auto;
+    margin-top: 22%;
     justify-content: center;
-    flex-direction: column;
+    padding: 2%;
+    justify-items: center;
+    color: #8C0444;
 }
 
-.emailPromo{
-    width: 40%;
-    border-radius: 15%;
+.cardapio-cafe{
+    margin: 6%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    justify-content: space-around;
+}
+
+#listaProdutos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    justify-content: center;
+    padding: 0;
+}
+
+.produto-item {
+    flex-direction: column;
+    margin: 1%;
+    text-align: justify;
     display: flex;
     align-items: center;
+    background-color: rgba(255, 255, 255, 0.404);
+    padding: 1%;
+    padding-top: 0.5;
+    width: 20%;
+    border-radius: 2%;
+}
+
+.produto-img{
+    width: 50%;
+    height: 70%;
+    border-radius: 5%;
 }

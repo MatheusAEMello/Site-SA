@@ -4,7 +4,7 @@ function Cadastro() {
     let email= document.getElementById('email').value;
     let senha= document.getElementById('senha').value;
     let termos= document.getElementById('termos').value;
-    let BancodeDados=  JSON.parse(localStorage.getItem("cadatro")) || {}
+    let BancodeDados=  JSON.parse(localStorage.getItem("cadastro")) || {}
    
     if(BancodeDados [email]){
        alert('Esse email já foi cadastrado!');
@@ -60,3 +60,7 @@ fundo.addEventListener("click", function(e) {
         fundo.classList.add("sumir"); 
     }
 });
+
+function voltarC(){
+    window.location.href = "telaPrincipal.html"
+}

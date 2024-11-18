@@ -43,9 +43,10 @@
                 const li = document.createElement('li');
                 
                 const img = document.createElement('img');
+
                 img.src = produto.urlImage;
-                img.style.margin = '10px';
-                img.style.width = '100px';
+                img.style.margin = '10px'; 
+                img.style.width = '100px'; 
                 img.style.height = 'auto';
 
                 li.textContent = `${produto.nome} - R$${produto.preco} - ${produto.descricao}`;
