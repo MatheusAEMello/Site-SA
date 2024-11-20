@@ -102,6 +102,25 @@ body{
     justify-content: space-around;
     margin-top: -5%;
 }
+
+.cardapio-cafe3{
+    margin: 6%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    justify-content: space-around;
+    margin-top: -5%;
+}
+
+.cardapio-cafe4{
+    margin: 6%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    justify-content: space-around;
+    margin-top: -5%;
+}
+
 ul#listaProdutos{
     margin: 6%;
     display: flex;

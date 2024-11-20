@@ -109,9 +109,11 @@ button{
     background-color: rgba(228, 130, 203, 0.403);
     border-radius: 6px;
 }
+
 button:hover{
     opacity: 1;
 }
+
 #fundo{
     position: fixed;
     top: 0;
@@ -136,6 +138,7 @@ button:hover{
     /*  ficar na frente do modal */
     z-index: 10; 
 }
+
 #modal-content{
     display: flex;
     justify-content: space-between;
@@ -144,9 +147,11 @@ button:hover{
     margin-bottom: 1px;
     padding-bottom: 1px;
 }
+
 .sumir{
     display: none;
 }
+
 #botaofechar{
     font-size: medium;
     width: 24%;

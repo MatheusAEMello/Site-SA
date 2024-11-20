@@ -54,7 +54,7 @@ label{
     cursor: pointer;
 }
 
-button#entrar,#voltar{
+button#entrarL,#voltarL{
     background-color: #8c0335c9;
     height: 10%;
     justify-content: center;
