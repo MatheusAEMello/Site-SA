@@ -24,31 +24,29 @@ function Cadastro() {
 
 // MODAL CADASTRO
 // Seleciona os elementos do DOM
-let abrirmodal = document.getElementById("botaoabrir");
-let fecharmodal = document.getElementById("botaofechar");
-let modal = document.getElementById("modal");
-let fundo = document.getElementById("fundo");
+const abrirModal = document.getElementById("botaoabrir");
+const fecharModal = document.getElementById("botaofechar");
+const modal = document.getElementById("modal");
+const fundo = document.getElementById("fundo");
 
-// Função para abrir o modal
-abrirmodal.addEventListener("click", function() {
-    modal.classList.remove("sumir"); 
-    fundo.classList.remove("sumir");  
+abrirModal.addEventListener("click", () => {
+    modal.classList.remove("sumir");
+    fundo.classList.remove("sumir");
 });
 
-// Função para fechar o modal
-fecharmodal.addEventListener("click", function() {
-    modal.classList.add("sumir");  
-    fundo.classList.add("sumir");  
+
+fecharModal.addEventListener("click", () => {
+    modal.classList.add("sumir");
+    fundo.classList.add("sumir");
 });
 
-// Fechar o modal ao clicar fora dele
-fundo.addEventListener("click", function(e) {
+
+fundo.addEventListener("click", (e) => {
     if (e.target === fundo) {
-        modal.classList.add("sumir"); 
-        fundo.classList.add("sumir"); 
+        modal.classList.add("sumir");
+        fundo.classList.add("sumir");
     }
 });
-
 function voltarC(){
     window.location.href = "telaPrincipal.html"
 }
